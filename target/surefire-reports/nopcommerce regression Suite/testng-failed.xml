@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [nopcommerce regression Suite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" verbose="0" name="Regression Test(failed)">
+    <classes>
+      <class name="tests.SearchPageUsingAutoSuggestTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="userCanSearchWithAutoSuggest"/>
+          <include name="setUpClass"/>
+          <include name="screenshotOnFaliure"/>
+          <include name="stopDriver"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- tests.SearchPageUsingAutoSuggestTest -->
+      <class name="tests.ProductHoverMenuTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="setUpClass"/>
+          <include name="screenshotOnFaliure"/>
+          <include name="userCanSelectSubCategoryFromMainMenu"/>
+          <include name="stopDriver"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- tests.ProductHoverMenuTest -->
+      <class name="tests.SearchProductTest">
+        <methods>
+          <include name="startDriver"/>
+          <include name="setUpClass"/>
+          <include name="screenshotOnFaliure"/>
+          <include name="stopDriver"/>
+          <include name="tearDownClass"/>
+          <include name="userCanSearchForProducts"/>
+        </methods>
+      </class> <!-- tests.SearchProductTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [nopcommerce regression Suite] -->
