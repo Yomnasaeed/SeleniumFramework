@@ -33,19 +33,23 @@ public class RegisteredUserCheckoutProductTest extends TestBase{
 	OrderDetailsPage orderObject;
 	
 	@Test(priority=1)
-	public void userCanRegisterSuccessfully()
+	public void userCanRegisterSuccessfully() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		homeObject = new HomePage(driver);
 		homeObject.openRegistrationPage();
 		registerObject = new UserRegisterationPage(driver);	
-		registerObject.userRegistration("Yomna", "Saeed", "test16612236932333332323866@gmail.com", "12345678");
+		Thread.sleep(3000);
+		registerObject.userRegistration("Yomna", "Saeed", "test16613333332323866@gmail.com", "12345678");
 		Assert.assertTrue(registerObject.successMessage.getText().contains("Your registration completed"));
 	}
 	
 	@Test(priority=2)
-	public void userCanSearchWithAutoSuggest()
+	public void userCanSearchWithAutoSuggest() throws InterruptedException
 	{
+		
 		searchObject = new SearchPage(driver);   //law nsiet a5od el object hna haydeeny null pointer exception
+		Thread.sleep(3000);
 		searchObject.ProductSearchUsingAutoSuggest("Mac");
 		detailsObject = new ProductDetailsPage(driver);
 		Assert.assertEquals(detailsObject.productNameBreadCrumb.getText(), productName);
@@ -55,6 +59,7 @@ public class RegisteredUserCheckoutProductTest extends TestBase{
 	public void userCanAddProductToShoppingCart() throws InterruptedException
 	{
 		detailsObject = new ProductDetailsPage(driver);
+		Thread.sleep(3000);
 		detailsObject.AddToCart();
 		Thread.sleep(3000);
 		driver.navigate().to("https://demo.nopcommerce.com"+ "/cart");
@@ -68,16 +73,19 @@ public class RegisteredUserCheckoutProductTest extends TestBase{
 	public void userCanCheckoutProduct() throws InterruptedException
 	{
 		checkoutObject = new CheckoutPage(driver);
+		Thread.sleep(3000);
 		cartPage.openCheckoutPage();
 		checkoutObject.RegisteredUserCheckoutProduct("Egypt", "Cairo", "test address", "89899", "0100556699", productName);
 		Assert.assertTrue(checkoutObject.productName.isDisplayed());
 		Assert.assertTrue(checkoutObject.productName.getText().contains(productName));
+		Thread.sleep(3000);
 		checkoutObject.confirmOrder();
 		Assert.assertTrue(checkoutObject.ThankYouLbl.isDisplayed());
 		
 		//Print invoice as PDF or print page
 		checkoutObject.viewOrderDetails();
 		orderObject = new OrderDetailsPage(driver);
+		Thread.sleep(3000);
 		orderObject.DownloadPDFInvoice();
 		orderObject.PrintOrderDetails();
 	}
@@ -86,6 +94,7 @@ public class RegisteredUserCheckoutProductTest extends TestBase{
 	@Test(priority=5)
 	public void registeredUserCanLogout() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		registerObject.userLogout();
 		
 	}

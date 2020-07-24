@@ -9,7 +9,7 @@
           <include name="setUpClass"/>
           <include name="screenshotOnFaliure"/>
           <include name="stopDriver"/>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="feature" invocation-numbers="1"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- runner.TestRunner -->

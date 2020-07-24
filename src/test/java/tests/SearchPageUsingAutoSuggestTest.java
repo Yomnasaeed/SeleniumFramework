@@ -13,9 +13,10 @@ public class SearchPageUsingAutoSuggestTest extends TestBase{
 	ProductDetailsPage detailsObject;
 	
 	@Test
-	public void userCanSearchWithAutoSuggest()
+	public void userCanSearchWithAutoSuggest() throws InterruptedException
 	{
 		searchObject = new SearchPage(driver);   //law nsiet a5od el object hna haydeeny null pointer exception
+		Thread.sleep(3000);
 		searchObject.ProductSearchUsingAutoSuggest("Mac");
 		detailsObject = new ProductDetailsPage(driver);
 		Assert.assertEquals(detailsObject.productNameBreadCrumb.getText(), productName);

@@ -95,4 +95,25 @@ public class CheckoutPage extends PageBase{
 	{
 		clickButton(orderDetailsLink);
 	}
+	
+	public void CheckoutProduct (String firstName, String lastName, String email, String countryName, String cityName, String addressName, 
+			String postalCode, String phone, String productName) throws InterruptedException
+	{
+		setTxtInElementTxt(fnTxt, firstName);
+		setTxtInElementTxt(lnTxt, lastName);
+		setTxtInElementTxt(emailTxt, email);
+		select = new Select(countryList);
+		select.selectByVisibleText(countryName);
+		setTxtInElementTxt(cityTxt, cityName);
+		setTxtInElementTxt(addressTxt, addressName);
+		setTxtInElementTxt(postalCodeTxt, postalCode);
+		setTxtInElementTxt(phoneTxt, phone);
+		clickButton(continueBtn);
+		clickButton(shippingMethodRdo);
+		clickButton(continueShippingBtn);
+		Thread.sleep(1000);
+		clickButton(continuePaymentBtn);
+		Thread.sleep(1000);
+		clickButton(continueInfoBtn);	
+	}
 }

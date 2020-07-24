@@ -30,13 +30,15 @@ public class AddProductReviewTest extends TestBase{
 	
 	//1- User registration
 	@Test(priority = 1)
-	public void userCanRegisterSuccessfully()
+	public void userCanRegisterSuccessfully() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		homeObject = new HomePage(driver);
 		homeObject.openRegistrationPage();
 		
 		registerObject = new UserRegisterationPage(driver);	
-		registerObject.userRegistration("Yomna", "Saeed", "test149632269693666@gmail.com", "12345678");
+		Thread.sleep(2000);
+		registerObject.userRegistration("Yomna", "Saeed", "test133224969965312554693666@gmail.com", "12345678");
 		
 		Assert.assertTrue(registerObject.successMessage.getText().contains("Your registration completed"));
 	}
@@ -44,8 +46,9 @@ public class AddProductReviewTest extends TestBase{
 	
 	//2- Search for product
 	@Test(priority = 2)
-	public void userCanSearchWithAutoSuggest()
+	public void userCanSearchWithAutoSuggest() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		searchObject = new SearchPage(driver);  
 		searchObject.ProductSearchUsingAutoSuggest("Mac");
 		detailsObject = new ProductDetailsPage(driver);
@@ -65,7 +68,8 @@ public class AddProductReviewTest extends TestBase{
 	
 	//4- User Logout
 	@Test(priority=4)
-	public void registeredUserCanLogout() {
+	public void registeredUserCanLogout() throws InterruptedException {
+		Thread.sleep(2000);
 		registerObject.userLogout();
 	}
 

@@ -26,16 +26,21 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "moves to checkout cart and enter personal details on checkout page and place the order",
+  "name": "choose to buy two items",
   "keyword": "And "
 });
 formatter.step({
   "line": 8,
+  "name": "moves to checkout cart and enter personal details on checkout page and place the order",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
   "name": "he can view the order and download the invoice",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 10,
+  "line": 11,
   "name": "",
   "description": "",
   "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search;",
@@ -44,21 +49,21 @@ formatter.examples({
       "cells": [
         "product name"
       ],
-      "line": 11,
+      "line": 12,
       "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search;;1"
     },
     {
       "cells": [
         "Apple MacBook Pro 13-inch"
       ],
-      "line": 12,
+      "line": 13,
       "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 12,
+  "line": 13,
   "name": "Customer place an order by purchasing an item from search",
   "description": "",
   "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search;;2",
@@ -80,29 +85,59 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "moves to checkout cart and enter personal details on checkout page and place the order",
+  "name": "choose to buy two items",
   "keyword": "And "
 });
 formatter.step({
   "line": 8,
+  "name": "moves to checkout cart and enter personal details on checkout page and place the order",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 9,
   "name": "he can view the order and download the invoice",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "E2ETests.user_is_on_Home_page()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 572880300,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "Apple MacBook Pro 13-inch",
+      "offset": 15
+    }
+  ],
+  "location": "E2ETests.he_search_for(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 5685419300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "E2ETests.choose_to_buy_two_items()"
+});
+formatter.result({
+  "duration": 7298307500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "E2ETests.moves_to_checkout_cart_and_enter_personal_details_on_checkout_page_and_place_the_order()"
+});
+formatter.result({
+  "duration": 13442659300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "E2ETests.he_can_view_the_order_and_download_the_invoice()"
+});
+formatter.result({
+  "duration": 7212336700,
+  "status": "passed"
 });
 formatter.uri("userRegistration.feature");
 formatter.feature({
@@ -160,7 +195,7 @@ formatter.examples({
       "cells": [
         "ahmed",
         "moahmed",
-        "a.moh11@test.com",
+        "a.moh11931@test.com",
         "12345678"
       ],
       "line": 12,
@@ -170,7 +205,7 @@ formatter.examples({
       "cells": [
         "ali",
         "ali",
-        "ali22@test.com",
+        "ali22236@test.com",
         "87456321"
       ],
       "line": 13,
@@ -199,7 +234,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "I entererd \"ahmed\", \"moahmed\", \"a.moh11@test.com\", \"12345678\"",
+  "name": "I entererd \"ahmed\", \"moahmed\", \"a.moh11931@test.com\", \"12345678\"",
   "matchedColumns": [
     0,
     1,
@@ -217,14 +252,14 @@ formatter.match({
   "location": "UserRegistration.the_user_in_the_home_page()"
 });
 formatter.result({
-  "duration": 3393105200,
+  "duration": 775857300,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegistration.i_click_on_the_regiter_link()"
 });
 formatter.result({
-  "duration": 37740100,
+  "duration": 2050970300,
   "status": "passed"
 });
 formatter.match({
@@ -238,25 +273,25 @@ formatter.match({
       "offset": 21
     },
     {
-      "val": "a.moh11@test.com",
+      "val": "a.moh11931@test.com",
       "offset": 32
     },
     {
       "val": "12345678",
-      "offset": 52
+      "offset": 55
     }
   ],
   "location": "UserRegistration.i_entererd(String,String,String,String)"
 });
 formatter.result({
-  "duration": 3836651300,
+  "duration": 2894172400,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegistration.the_registration_page_displayed_successfully()"
 });
 formatter.result({
-  "duration": 81945300,
+  "duration": 3338079600,
   "status": "passed"
 });
 formatter.scenario({
@@ -279,7 +314,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "I entererd \"ali\", \"ali\", \"ali22@test.com\", \"87456321\"",
+  "name": "I entererd \"ali\", \"ali\", \"ali22236@test.com\", \"87456321\"",
   "matchedColumns": [
     0,
     1,
@@ -297,14 +332,14 @@ formatter.match({
   "location": "UserRegistration.the_user_in_the_home_page()"
 });
 formatter.result({
-  "duration": 26131927900,
+  "duration": 1587920300,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegistration.i_click_on_the_regiter_link()"
 });
 formatter.result({
-  "duration": 18419500,
+  "duration": 2027603900,
   "status": "passed"
 });
 formatter.match({
@@ -318,25 +353,25 @@ formatter.match({
       "offset": 19
     },
     {
-      "val": "ali22@test.com",
+      "val": "ali22236@test.com",
       "offset": 26
     },
     {
       "val": "87456321",
-      "offset": 44
+      "offset": 47
     }
   ],
   "location": "UserRegistration.i_entererd(String,String,String,String)"
 });
 formatter.result({
-  "duration": 802328600,
+  "duration": 3272725000,
   "status": "passed"
 });
 formatter.match({
   "location": "UserRegistration.the_registration_page_displayed_successfully()"
 });
 formatter.result({
-  "duration": 14165083000,
+  "duration": 2443095300,
   "status": "passed"
 });
 });

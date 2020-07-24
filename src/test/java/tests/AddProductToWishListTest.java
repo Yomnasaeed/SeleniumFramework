@@ -17,8 +17,9 @@ public class AddProductToWishListTest extends TestBase{
 	
 	
 	@Test(priority = 1)
-	public void userCanSearchWithAutoSuggest()
+	public void userCanSearchWithAutoSuggest() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		searchObject = new SearchPage(driver);  
 		searchObject.ProductSearchUsingAutoSuggest("Mac");
 		detailsObject = new ProductDetailsPage(driver);
@@ -26,8 +27,9 @@ public class AddProductToWishListTest extends TestBase{
 	}
 	
 	@Test(priority = 2)
-	public void userCanAddProductToWishList()
+	public void userCanAddProductToWishList() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		detailsObject = new ProductDetailsPage(driver);
 		detailsObject.addProductToWishList();
 		driver.navigate().to("https://demo.nopcommerce.com/wishlist");
@@ -38,8 +40,9 @@ public class AddProductToWishListTest extends TestBase{
 	
 
 	@Test(priority = 3)
-	public void userCanRemoveProductFromWishList()
+	public void userCanRemoveProductFromWishList() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		wishListObject = new WishListPage(driver);
 		wishListObject.removeProductFromWishList();
 		Assert.assertTrue(wishListObject.emptyCartLbl.getText().contains("The wishlist is empty!"));

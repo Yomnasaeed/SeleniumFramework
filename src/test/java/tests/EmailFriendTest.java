@@ -22,13 +22,15 @@ public class EmailFriendTest extends TestBase{
 	
 	//1- User registration
 	@Test(priority = 1)
-	public void userCanRegisterSuccessfully()
+	public void userCanRegisterSuccessfully() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		homeObject = new HomePage(driver);
 		homeObject.openRegistrationPage();
 		
 		registerObject = new UserRegisterationPage(driver);	
-		registerObject.userRegistration("Yomna", "Saeed", "test14966969241113666@gmail.com", "12345678");
+		Thread.sleep(3000);
+		registerObject.userRegistration("Yomna", "Saeed", "test13349669692411698713666@gmail.com", "12345678");
 		
 		Assert.assertTrue(registerObject.successMessage.getText().contains("Your registration completed"));
 	}
@@ -46,10 +48,11 @@ public class EmailFriendTest extends TestBase{
 	
 	//3- Email to friend
 	@Test(priority = 3)
-	public void RegisteredUserCanSendProductToFriend()
+	public void RegisteredUserCanSendProductToFriend() throws InterruptedException
 	{
 		detailsObject.openSendEmail();
 		emailObject = new EmailFriendPage(driver);
+		Thread.sleep(2000);
 		emailObject.sendEmailToFriend("aaa@test.com", "Hello my friend, check this product");
 		Assert.assertTrue(emailObject.MessageNotification.getText().contains("Your message has been sent."));
 		

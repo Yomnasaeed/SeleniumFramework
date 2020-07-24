@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="24" total="28" passed="4">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="nopcommerce regression Suite" duration-ms="55533" started-at="2020-07-10T10:03:48Z" finished-at="2020-07-10T10:04:43Z">
+  <suite name="nopcommerce regression Suite" duration-ms="34307" started-at="2020-07-23T21:27:37Z" finished-at="2020-07-23T21:28:11Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.AddProductReviewTest@51081592]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.AddProductToCompareTest@7f9a81e8]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.AddProductToShoppingCartTest@9629756]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.AddProductToWishListTest@62ee68d8]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.ChangeCurrencyTest@735b5592]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.ContactUsTest@58651fd0]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.EmailFriendTest@4520ebad]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.MyAccountTest@5419f379]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.ProductHoverMenuTest@7dc7cbad]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.RegisteredUserCheckoutProductTest@d2cc05a]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@4f933fd1]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.SearchProductTest@548a9f61]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.UserRegistrationTest@396a51ab]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Regression Test" duration-ms="55533" started-at="2020-07-10T10:03:48Z" finished-at="2020-07-10T10:04:43Z">
-      <class name="tests.EmailFriendTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.EmailFriendTest@4520ebad]" name="setUpClass" is-config="true" duration-ms="34" started-at="2020-07-10T10:03:54Z" finished-at="2020-07-10T10:03:54Z">
+    <test name="Regression Test" duration-ms="34307" started-at="2020-07-23T21:27:37Z" finished-at="2020-07-23T21:28:11Z">
+      <class name="tests.SearchPageUsingAutoSuggestTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609]" name="setUpClass" is-config="true" duration-ms="32" started-at="2020-07-23T21:27:58Z" finished-at="2020-07-23T21:27:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-      </class> <!-- tests.EmailFriendTest -->
-      <class name="tests.UserRegistrationTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.UserRegistrationTest@396a51ab]" name="startDriver" is-config="true" duration-ms="22838" started-at="2020-07-10T10:03:25Z" finished-at="2020-07-10T10:03:48Z">
+        <test-method status="PASS" signature="userCanSearchWithAutoSuggest()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609]" name="userCanSearchWithAutoSuggest" duration-ms="13431" started-at="2020-07-23T21:27:58Z" finished-at="2020-07-23T21:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userCanSearchWithAutoSuggest -->
+        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609]" name="screenshotOnFaliure" is-config="true" duration-ms="1" started-at="2020-07-23T21:28:11Z" finished-at="2020-07-23T21:28:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userCanSearchWithAutoSuggest status=SUCCESS method=SearchPageUsingAutoSuggestTest.userCanSearchWithAutoSuggest()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFaliure -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2020-07-23T21:28:11Z" finished-at="2020-07-23T21:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.SearchPageUsingAutoSuggestTest -->
+      <class name="tests.ContactUsTest">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="startDriver" is-config="true" duration-ms="47515" started-at="2020-07-23T21:26:50Z" finished-at="2020-07-23T21:27:37Z">
           <params>
             <param index="0">
               <value>
@@ -39,157 +47,34 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.UserRegistrationTest@396a51ab]" name="setUpClass" is-config="true" duration-ms="1209" started-at="2020-07-10T10:03:48Z" finished-at="2020-07-10T10:03:49Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="setUpClass" is-config="true" duration-ms="6297" started-at="2020-07-23T21:27:38Z" finished-at="2020-07-23T21:27:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.UserRegistrationTest@396a51ab]" name="stopDriver" is-config="true" duration-ms="1150" started-at="2020-07-10T10:04:44Z" finished-at="2020-07-10T10:04:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDriver -->
-      </class> <!-- tests.UserRegistrationTest -->
-      <class name="tests.SearchPageUsingAutoSuggestTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@4f933fd1]" name="setUpClass" is-config="true" duration-ms="15" started-at="2020-07-10T10:04:31Z" finished-at="2020-07-10T10:04:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="userCanSearchWithAutoSuggest()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@4f933fd1]" name="userCanSearchWithAutoSuggest" duration-ms="7740" started-at="2020-07-10T10:04:31Z" finished-at="2020-07-10T10:04:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userCanSearchWithAutoSuggest -->
-        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@4f933fd1]" name="screenshotOnFaliure" is-config="true" duration-ms="0" started-at="2020-07-10T10:04:39Z" finished-at="2020-07-10T10:04:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userCanSearchWithAutoSuggest status=SUCCESS method=SearchPageUsingAutoSuggestTest.userCanSearchWithAutoSuggest()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@4f933fd1] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFaliure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@4f933fd1]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2020-07-10T10:04:39Z" finished-at="2020-07-10T10:04:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- tests.SearchPageUsingAutoSuggestTest -->
-      <class name="tests.AddProductToWishListTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.AddProductToWishListTest@62ee68d8]" name="setUpClass" is-config="true" duration-ms="31" started-at="2020-07-10T10:03:49Z" finished-at="2020-07-10T10:03:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-      </class> <!-- tests.AddProductToWishListTest -->
-      <class name="tests.SearchProductTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.SearchProductTest@548a9f61]" name="setUpClass" is-config="true" duration-ms="16" started-at="2020-07-10T10:04:39Z" finished-at="2020-07-10T10:04:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="userCanSearchForProducts()[pri:0, instance:tests.SearchProductTest@548a9f61]" name="userCanSearchForProducts" duration-ms="4307" started-at="2020-07-10T10:04:39Z" finished-at="2020-07-10T10:04:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userCanSearchForProducts -->
-        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:tests.SearchProductTest@548a9f61]" name="screenshotOnFaliure" is-config="true" duration-ms="1" started-at="2020-07-10T10:04:43Z" finished-at="2020-07-10T10:04:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userCanSearchForProducts status=SUCCESS method=SearchProductTest.userCanSearchForProducts()[pri:0, instance:tests.SearchProductTest@548a9f61] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFaliure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.SearchProductTest@548a9f61]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2020-07-10T10:04:43Z" finished-at="2020-07-10T10:04:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- tests.SearchProductTest -->
-      <class name="tests.AddProductToCompareTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.AddProductToCompareTest@7f9a81e8]" name="setUpClass" is-config="true" duration-ms="24" started-at="2020-07-10T10:03:49Z" finished-at="2020-07-10T10:03:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-      </class> <!-- tests.AddProductToCompareTest -->
-      <class name="tests.RegisteredUserCheckoutProductTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.RegisteredUserCheckoutProductTest@d2cc05a]" name="setUpClass" is-config="true" duration-ms="28" started-at="2020-07-10T10:04:31Z" finished-at="2020-07-10T10:04:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-      </class> <!-- tests.RegisteredUserCheckoutProductTest -->
-      <class name="tests.ContactUsTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ContactUsTest@58651fd0]" name="setUpClass" is-config="true" duration-ms="36" started-at="2020-07-10T10:03:49Z" finished-at="2020-07-10T10:03:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="userCanUseContactUs()[pri:0, instance:tests.ContactUsTest@58651fd0]" name="userCanUseContactUs" duration-ms="4489" started-at="2020-07-10T10:03:49Z" finished-at="2020-07-10T10:03:54Z">
+        <test-method status="PASS" signature="userCanUseContactUs()[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="userCanUseContactUs" duration-ms="13653" started-at="2020-07-23T21:27:44Z" finished-at="2020-07-23T21:27:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanUseContactUs -->
-        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@58651fd0]" name="screenshotOnFaliure" is-config="true" duration-ms="2" started-at="2020-07-10T10:03:54Z" finished-at="2020-07-10T10:03:54Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="tearDownClass" is-config="true" duration-ms="463" started-at="2020-07-23T21:27:58Z" finished-at="2020-07-23T21:27:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="screenshotOnFaliure" is-config="true" duration-ms="0" started-at="2020-07-23T21:27:58Z" finished-at="2020-07-23T21:27:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanUseContactUs status=SUCCESS method=ContactUsTest.userCanUseContactUs()[pri:0, instance:tests.ContactUsTest@58651fd0] output={null}]]]>
+                <![CDATA[[TestResult name=userCanUseContactUs status=SUCCESS method=ContactUsTest.userCanUseContactUs()[pri:0, instance:tests.ContactUsTest@2a2d45ba] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFaliure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.ContactUsTest@58651fd0]" name="tearDownClass" is-config="true" duration-ms="95" started-at="2020-07-10T10:03:54Z" finished-at="2020-07-10T10:03:54Z">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="stopDriver" is-config="true" duration-ms="2825" started-at="2020-07-23T21:28:12Z" finished-at="2020-07-23T21:28:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
+        </test-method> <!-- stopDriver -->
       </class> <!-- tests.ContactUsTest -->
-      <class name="tests.AddProductToShoppingCartTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.AddProductToShoppingCartTest@9629756]" name="setUpClass" is-config="true" duration-ms="23" started-at="2020-07-10T10:03:49Z" finished-at="2020-07-10T10:03:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-      </class> <!-- tests.AddProductToShoppingCartTest -->
-      <class name="tests.MyAccountTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.MyAccountTest@5419f379]" name="setUpClass" is-config="true" duration-ms="25" started-at="2020-07-10T10:03:54Z" finished-at="2020-07-10T10:03:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-      </class> <!-- tests.MyAccountTest -->
-      <class name="tests.ProductHoverMenuTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ProductHoverMenuTest@7dc7cbad]" name="setUpClass" is-config="true" duration-ms="24" started-at="2020-07-10T10:03:54Z" finished-at="2020-07-10T10:03:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="userCanSelectSubCategoryFromMainMenu()[pri:0, instance:tests.ProductHoverMenuTest@7dc7cbad]" name="userCanSelectSubCategoryFromMainMenu" duration-ms="37100" started-at="2020-07-10T10:03:54Z" finished-at="2020-07-10T10:04:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userCanSelectSubCategoryFromMainMenu -->
-        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:tests.ProductHoverMenuTest@7dc7cbad]" name="screenshotOnFaliure" is-config="true" duration-ms="1" started-at="2020-07-10T10:04:31Z" finished-at="2020-07-10T10:04:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userCanSelectSubCategoryFromMainMenu status=SUCCESS method=ProductHoverMenuTest.userCanSelectSubCategoryFromMainMenu()[pri:0, instance:tests.ProductHoverMenuTest@7dc7cbad] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- screenshotOnFaliure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.ProductHoverMenuTest@7dc7cbad]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2020-07-10T10:04:31Z" finished-at="2020-07-10T10:04:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- tests.ProductHoverMenuTest -->
-      <class name="tests.ChangeCurrencyTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ChangeCurrencyTest@735b5592]" name="setUpClass" is-config="true" duration-ms="31" started-at="2020-07-10T10:03:49Z" finished-at="2020-07-10T10:03:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-      </class> <!-- tests.ChangeCurrencyTest -->
-      <class name="tests.AddProductReviewTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.AddProductReviewTest@51081592]" name="setUpClass" is-config="true" duration-ms="74" started-at="2020-07-10T10:03:49Z" finished-at="2020-07-10T10:03:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-      </class> <!-- tests.AddProductReviewTest -->
     </test> <!-- Regression Test -->
   </suite> <!-- nopcommerce regression Suite -->
 </testng-results>

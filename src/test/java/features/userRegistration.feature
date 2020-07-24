@@ -9,5 +9,5 @@ Feature: User Registration
  
  Examples:
  | firstname | lastname | email | password |
- | ahmed | moahmed | a.moh11@test.com | 12345678 |
- | ali | ali | ali22@test.com | 87456321 |
+ | ahmed | moahmed | a.moh11931@test.com | 12345678 |
+ | ali | ali | ali22236@test.com | 87456321 |

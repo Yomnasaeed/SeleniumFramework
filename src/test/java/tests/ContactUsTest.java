@@ -16,8 +16,9 @@ public class ContactUsTest extends TestBase{
 	String enquiry = "Hello Admin, this is for test";
 	
 	@Test
-	public void userCanUseContactUs()
+	public void userCanUseContactUs() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		home = new HomePage(driver);
 		home.openContactUsPage();
 		contactPage = new ContactUsPage(driver);

@@ -28,6 +28,9 @@ public class ShoppingCartPage extends PageBase{
 	@FindBy(id="termsofservice")
 	WebElement agreeCheckBox;
 	
+	@FindBy(css="input.button-1.checkout-as-guest-button")
+	WebElement CheckoutAsGuestBtn;
+	
 	
 	public void removeProductFromCart()
 	{
@@ -47,6 +50,14 @@ public class ShoppingCartPage extends PageBase{
 	{
 		clickButton(agreeCheckBox);
 		clickButton(checkoutBtn);
+	}
+	
+	public void openCheckoutPageAsGuest() throws InterruptedException
+	{
+		clickButton(agreeCheckBox);
+		clickButton(checkoutBtn);
+		Thread.sleep(3000);
+		clickButton(CheckoutAsGuestBtn);
 	}
 	
 }

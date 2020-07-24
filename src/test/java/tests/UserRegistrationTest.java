@@ -14,13 +14,14 @@ public class UserRegistrationTest extends TestBase{
 	LoginPage loginObject;
 
 	@Test(priority = 1 , alwaysRun = true)
-	public void userCanRegisterSuccessfully()
+	public void userCanRegisterSuccessfully() throws InterruptedException
 	{
 		homeObject = new HomePage(driver);
 		homeObject.openRegistrationPage();
 		
 		registerObject = new UserRegisterationPage(driver);	
-		registerObject.userRegistration("Yomna", "Saeed", "test14966999821312693666@gmail.com", "12345678");
+		Thread.sleep(2000);
+		registerObject.userRegistration("Yomna", "Saeed", "test222171231993393123665799@gmail.com", "12345678");
 		
 		Assert.assertTrue(registerObject.successMessage.getText().contains("Your registration completed"));
 	}
@@ -31,10 +32,14 @@ public class UserRegistrationTest extends TestBase{
 	}
 	
 	@Test(dependsOnMethods= {"registeredUserCanLogout"})
-	public void registeredUserCanLogin() {
+	public void registeredUserCanLogin() throws InterruptedException {
+		Thread.sleep(2000);
 		homeObject.openLoginPage();
 		loginObject = new LoginPage(driver);
-		loginObject.userLogin("yomnayomna@gmail.com", "yomnayomna");
+		Thread.sleep(2000);
+		loginObject.userLogin("test222171231993393123665799@gmail.com", "12345678");
 		Assert.assertTrue(registerObject.logoutLink.getText().contains("Log out"));
+		Thread.sleep(2000);
+		registerObject.userLogout();
 	}
 }

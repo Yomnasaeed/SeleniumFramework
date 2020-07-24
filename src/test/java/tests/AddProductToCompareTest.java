@@ -25,10 +25,12 @@ public class AddProductToCompareTest extends TestBase{
 	@Test(priority=1)
 	public void userCanCompareProducts() throws InterruptedException
 	{
+		Thread.sleep(3000);
 		searchObject = new SearchPage(driver);
 		detailsObject = new ProductDetailsPage(driver);
 		compareObject = new ComparePage(driver);
 		
+		Thread.sleep(3000);
 		searchObject.ProductSearchUsingAutoSuggest("MacB");
 		Assert.assertTrue(detailsObject.productNameBreadCrumb.getText().contains(firstProductName));
 		detailsObject.AddProductToCompare();

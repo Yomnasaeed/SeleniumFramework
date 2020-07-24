@@ -1,5 +1,4 @@
 E:\Eclipse workspace\taf\src\test\java\tests\MyAccountTest.java
-E:\Eclipse workspace\taf\src\test\java\steps\E2ETests.java
 E:\Eclipse workspace\taf\src\test\java\tests\UserRegistrationTest.java
 E:\Eclipse workspace\taf\src\test\java\tests\SearchPageUsingAutoSuggestTest.java
 E:\Eclipse workspace\taf\src\test\java\tests\RegisteredUserCheckoutProductTest.java
@@ -20,6 +19,7 @@ E:\Eclipse workspace\taf\src\test\java\tests\UserRegistrationTestWithDDTandDataP
 E:\Eclipse workspace\taf\src\test\java\tests\AddProductToCompareTest.java
 E:\Eclipse workspace\taf\src\test\java\tests\UserRegistrationTestWithDDTandCSV.java
 E:\Eclipse workspace\taf\src\test\java\tests\UserRegistrationTestWithDDTandExcel.java
+E:\Eclipse workspace\taf\src\test\java\tests\GuestCheckoutProductFromCartTest.java
 E:\Eclipse workspace\taf\src\test\java\tests\UserRegistrationTestWithDDTandPropertiesFile.java
 E:\Eclipse workspace\taf\src\test\java\tests\AddProductToWishListTest.java
 E:\Eclipse workspace\taf\src\test\java\tests\ContactUsTest.java

@@ -22,7 +22,8 @@ public class UserRegistration extends TestBase{
 	}
 
 	@When("^I click on the regiter link$")
-	public void i_click_on_the_regiter_link() {
+	public void i_click_on_the_regiter_link() throws InterruptedException {
+		Thread.sleep(2000);
 	    Assert.assertTrue(driver.getCurrentUrl().contains("register"));
 	}
 

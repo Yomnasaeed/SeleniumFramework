@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49765" started-at="2020-07-06T19:16:07 EET" finished-at="2020-07-06T19:16:57 EET">
+  <suite name="Default suite" duration-ms="53351" started-at="2020-07-24T02:00:09 EET" finished-at="2020-07-24T02:01:02 EET">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="49765" started-at="2020-07-06T19:16:07 EET" finished-at="2020-07-06T19:16:57 EET">
+    <test name="Default test" duration-ms="53351" started-at="2020-07-24T02:00:09 EET" finished-at="2020-07-24T02:01:02 EET">
       <class name="runner.TestRunner">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="startDriver" is-config="true" duration-ms="22286" started-at="2020-07-06T19:15:45 EET" finished-at="2020-07-06T19:16:07 EET">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="startDriver" is-config="true" duration-ms="10892" started-at="2020-07-24T01:59:58 EET" finished-at="2020-07-24T02:00:09 EET">
           <params>
             <param index="0">
               <value>
@@ -21,11 +21,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="setUpClass" is-config="true" duration-ms="646" started-at="2020-07-06T19:16:07 EET" finished-at="2020-07-06T19:16:08 EET">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="setUpClass" is-config="true" duration-ms="357" started-at="2020-07-24T02:00:09 EET" finished-at="2020-07-24T02:00:09 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="feature" duration-ms="43" started-at="2020-07-06T19:16:08 EET" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-07-06T19:16:08 EET">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="feature" duration-ms="34303" started-at="2020-07-24T02:00:09 EET" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-07-24T02:00:44 EET">
           <params>
             <param index="0">
               <value>
@@ -36,7 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="screenshotOnFaliure" is-config="true" duration-ms="2" started-at="2020-07-06T19:16:08 EET" finished-at="2020-07-06T19:16:08 EET">
+        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="screenshotOnFaliure" is-config="true" duration-ms="2" started-at="2020-07-24T02:00:44 EET" finished-at="2020-07-24T02:00:44 EET">
           <params>
             <param index="0">
               <value>
@@ -47,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFaliure -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="feature" duration-ms="48529" started-at="2020-07-06T19:16:08 EET" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-07-06T19:16:57 EET">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="feature" duration-ms="18413" started-at="2020-07-24T02:00:44 EET" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-07-24T02:01:02 EET">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="screenshotOnFaliure" is-config="true" duration-ms="1" started-at="2020-07-06T19:16:57 EET" finished-at="2020-07-06T19:16:57 EET">
+        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="screenshotOnFaliure" is-config="true" duration-ms="0" started-at="2020-07-24T02:01:02 EET" finished-at="2020-07-24T02:01:02 EET">
           <params>
             <param index="0">
               <value>
@@ -69,11 +69,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFaliure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="tearDownClass" is-config="true" duration-ms="310" started-at="2020-07-06T19:16:57 EET" finished-at="2020-07-06T19:16:57 EET">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="tearDownClass" is-config="true" duration-ms="66" started-at="2020-07-24T02:01:02 EET" finished-at="2020-07-24T02:01:02 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="stopDriver" is-config="true" duration-ms="917" started-at="2020-07-06T19:16:57 EET" finished-at="2020-07-06T19:16:58 EET">
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:runner.TestRunner@3cb1ffe6]" name="stopDriver" is-config="true" duration-ms="869" started-at="2020-07-24T02:01:03 EET" finished-at="2020-07-24T02:01:03 EET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->

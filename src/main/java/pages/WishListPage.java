@@ -10,7 +10,7 @@ public class WishListPage extends PageBase{
 		super(driver);
 	}
 	
-	@FindBy(css="td.product")
+	@FindBy(css="a.product-name")
 	public WebElement ProductCell;
 	
 	@FindBy(css="h1")
