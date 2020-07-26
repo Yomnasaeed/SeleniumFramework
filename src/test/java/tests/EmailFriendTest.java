@@ -30,7 +30,7 @@ public class EmailFriendTest extends TestBase{
 		
 		registerObject = new UserRegisterationPage(driver);	
 		Thread.sleep(3000);
-		registerObject.userRegistration("Yomna", "Saeed", "test13349669692411698713666@gmail.com", "12345678");
+		registerObject.userRegistration("Yomna", "Saeed", "test13349692411698713666@gmail.com", "12345678");
 		
 		Assert.assertTrue(registerObject.successMessage.getText().contains("Your registration completed"));
 	}

@@ -2,41 +2,41 @@
 <testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="nopcommerce regression Suite" duration-ms="34307" started-at="2020-07-23T21:27:37Z" finished-at="2020-07-23T21:28:11Z">
+  <suite name="nopcommerce regression Suite" duration-ms="22534" started-at="2020-07-25T17:02:58Z" finished-at="2020-07-25T17:03:20Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.ContactUsTest@e50a6f6]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@14ec4505]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Regression Test" duration-ms="34307" started-at="2020-07-23T21:27:37Z" finished-at="2020-07-23T21:28:11Z">
+    <test name="Regression Test" duration-ms="22534" started-at="2020-07-25T17:02:58Z" finished-at="2020-07-25T17:03:20Z">
       <class name="tests.SearchPageUsingAutoSuggestTest">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609]" name="setUpClass" is-config="true" duration-ms="32" started-at="2020-07-23T21:27:58Z" finished-at="2020-07-23T21:27:58Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@14ec4505]" name="setUpClass" is-config="true" duration-ms="16" started-at="2020-07-25T17:03:11Z" finished-at="2020-07-25T17:03:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="userCanSearchWithAutoSuggest()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609]" name="userCanSearchWithAutoSuggest" duration-ms="13431" started-at="2020-07-23T21:27:58Z" finished-at="2020-07-23T21:28:11Z">
+        <test-method status="PASS" signature="userCanSearchWithAutoSuggest()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@14ec4505]" name="userCanSearchWithAutoSuggest" duration-ms="9767" started-at="2020-07-25T17:03:11Z" finished-at="2020-07-25T17:03:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanSearchWithAutoSuggest -->
-        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609]" name="screenshotOnFaliure" is-config="true" duration-ms="1" started-at="2020-07-23T21:28:11Z" finished-at="2020-07-23T21:28:11Z">
+        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@14ec4505]" name="screenshotOnFaliure" is-config="true" duration-ms="1" started-at="2020-07-25T17:03:20Z" finished-at="2020-07-25T17:03:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanSearchWithAutoSuggest status=SUCCESS method=SearchPageUsingAutoSuggestTest.userCanSearchWithAutoSuggest()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609] output={null}]]]>
+                <![CDATA[[TestResult name=userCanSearchWithAutoSuggest status=SUCCESS method=SearchPageUsingAutoSuggestTest.userCanSearchWithAutoSuggest()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@14ec4505] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFaliure -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@2a5ca609]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2020-07-23T21:28:11Z" finished-at="2020-07-23T21:28:11Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.SearchPageUsingAutoSuggestTest@14ec4505]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2020-07-25T17:03:20Z" finished-at="2020-07-25T17:03:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- tests.SearchPageUsingAutoSuggestTest -->
       <class name="tests.ContactUsTest">
-        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="startDriver" is-config="true" duration-ms="47515" started-at="2020-07-23T21:26:50Z" finished-at="2020-07-23T21:27:37Z">
+        <test-method status="PASS" signature="startDriver(java.lang.String)[pri:0, instance:tests.ContactUsTest@e50a6f6]" name="startDriver" is-config="true" duration-ms="28321" started-at="2020-07-25T17:02:30Z" finished-at="2020-07-25T17:02:58Z">
           <params>
             <param index="0">
               <value>
@@ -47,30 +47,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="setUpClass" is-config="true" duration-ms="6297" started-at="2020-07-23T21:27:38Z" finished-at="2020-07-23T21:27:44Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.ContactUsTest@e50a6f6]" name="setUpClass" is-config="true" duration-ms="2167" started-at="2020-07-25T17:02:58Z" finished-at="2020-07-25T17:03:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="userCanUseContactUs()[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="userCanUseContactUs" duration-ms="13653" started-at="2020-07-23T21:27:44Z" finished-at="2020-07-23T21:27:58Z">
+        <test-method status="PASS" signature="userCanUseContactUs()[pri:0, instance:tests.ContactUsTest@e50a6f6]" name="userCanUseContactUs" duration-ms="9853" started-at="2020-07-25T17:03:00Z" finished-at="2020-07-25T17:03:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanUseContactUs -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="tearDownClass" is-config="true" duration-ms="463" started-at="2020-07-23T21:27:58Z" finished-at="2020-07-23T21:27:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="screenshotOnFaliure" is-config="true" duration-ms="0" started-at="2020-07-23T21:27:58Z" finished-at="2020-07-23T21:27:58Z">
+        <test-method status="PASS" signature="screenshotOnFaliure(org.testng.ITestResult)[pri:0, instance:tests.ContactUsTest@e50a6f6]" name="screenshotOnFaliure" is-config="true" duration-ms="0" started-at="2020-07-25T17:03:11Z" finished-at="2020-07-25T17:03:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=userCanUseContactUs status=SUCCESS method=ContactUsTest.userCanUseContactUs()[pri:0, instance:tests.ContactUsTest@2a2d45ba] output={null}]]]>
+                <![CDATA[[TestResult name=userCanUseContactUs status=SUCCESS method=ContactUsTest.userCanUseContactUs()[pri:0, instance:tests.ContactUsTest@e50a6f6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFaliure -->
-        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ContactUsTest@2a2d45ba]" name="stopDriver" is-config="true" duration-ms="2825" started-at="2020-07-23T21:28:12Z" finished-at="2020-07-23T21:28:15Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.ContactUsTest@e50a6f6]" name="tearDownClass" is-config="true" duration-ms="62" started-at="2020-07-25T17:03:11Z" finished-at="2020-07-25T17:03:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="stopDriver()[pri:0, instance:tests.ContactUsTest@e50a6f6]" name="stopDriver" is-config="true" duration-ms="1172" started-at="2020-07-25T17:03:21Z" finished-at="2020-07-25T17:03:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopDriver -->
